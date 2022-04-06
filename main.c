@@ -226,6 +226,7 @@ int main(void)
     return 0;
 }
 
+/*
 static size_t hash_function(const char* key)
 {
     size_t code = 0;
@@ -237,3 +238,21 @@ static size_t hash_function(const char* key)
 
     return code;
 }
+*/
+
+
+
+static size_t hash_function(const char* key)
+{
+	size_t hash;
+    const char* p  = key;
+	
+	hash = 0;
+    while (*p != '\0') {
+        hash = 65599 * hash + *p;
+        ++p;
+    }
+
+	return hash ^ (hash >> 16);
+}
+
