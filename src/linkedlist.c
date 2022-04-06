@@ -1,9 +1,9 @@
 #include "linkedlist.h"
 
-static int len(list_node_t** head)
+static size_t len(list_node_t** head)
 {
     list_node_t** phead = head;
-    int length = 0;
+    size_t length = 0;
 
     while (*phead != NULL) {
         ++length;
@@ -78,6 +78,8 @@ Bool remove_last(list_node_t** head)
 
     free(*phead);
     *phead = NULL;
+
+    return TRUE;
 }
 
 Bool remove_at(list_node_t** head, size_t index)

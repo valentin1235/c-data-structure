@@ -10,7 +10,7 @@ void enqueue(myqueue_t* queue, int value)
 
     ++queue->value_count;
 
-    printf("[enqueue] front:%d, back:%d, count:%d\n", queue->front, queue->back, queue->value_count);
+    printf("[enqueue] front:%d, back:%d, count:%lu\n", queue->front, queue->back, queue->value_count);
 }
 
 int dequeue(myqueue_t* queue)
@@ -25,7 +25,7 @@ int dequeue(myqueue_t* queue)
 
     --queue->value_count;
 
-    printf("[dequeue] front:%d, back:%d, count:%d, ret:%d\n", queue->front, queue->back, queue->value_count, ret);
+    printf("[dequeue] front:%d, back:%d, count:%lu, ret:%d\n", queue->front, queue->back, queue->value_count, ret);
 
     return ret;
 }
