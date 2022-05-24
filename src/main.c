@@ -3,10 +3,6 @@
 #include <string.h>
 #include <stdlib.h>
 #include <limits.h>
-// #include "stack.h"
-// #include "queue.h"
-// #include "linkedlist.h"
-// #include "hashmap.h"
 #include "../header/data_structure.h"
 
 #define DEFAULT_ARRAY_LENGTH (20)
