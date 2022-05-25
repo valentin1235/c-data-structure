@@ -21,7 +21,7 @@ ex) `clang -std=c89 -W -Wall -pedantic-errors -I /Users/heechul/c-data-structure
 ex) `clang -std=c89 -W -Wall -pedantic-errors -I /Users/heechul/c-data-structure/header -L /Users/heechul/c-data-structure/lib -ldata_structure *.c`
 
 ## 이슈 로그
-### 링크드리스트 헤드 이슈
+### 링크드리스트 헤드노드 이슈
 ##### 상황
 ```
 list_node_t* head = NULL;
